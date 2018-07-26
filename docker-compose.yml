@@ -1,0 +1,8 @@
+iversion: "3"                                                                    
+services:   
+  pfeffernusse:                                                                 
+    image: jlaura/pfeffernusse                                                
+    ports:                                                                    
+      - "308002:5000"                                                         
+    volumes:                                                                  
+      - "${SPICE_DATA_DIR}:/data/spice"
