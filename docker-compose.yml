@@ -3,6 +3,6 @@ services:
   pfeffernusse:                                                                 
     image: jlaura/pfeffernusse                                                
     ports:                                                                    
-      - "308002:5000"                                                         
+      - "38002:5000"                                                         
     volumes:                                                                  
       - "${SPICE_DATA_DIR}:/data/spice"
