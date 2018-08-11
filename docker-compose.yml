@@ -5,4 +5,11 @@ services:
     ports:                                                                    
       - "38002:5000"                                                         
     volumes:                                                                  
-      - "${SPICE_DATA_DIR}:/data/spice"
+      - "/data/big/spice:/data/spice"
+
+  gitlfs:
+    image: jlaura/gogitlfs
+    ports:
+      - "9999:9999"
+    volumes:
+      - "/data/big/lfs:/data"
