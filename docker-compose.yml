@@ -3,13 +3,14 @@ services:
   pfeffernusse:                                                                 
     image: usgsastro/pfeffernusse                                                
     ports:                                                                    
-      - "38002:5000"                                                         
+      - "8081:5000"                                                         
     volumes:                                                                  
-      - "/data/big/spice:/data/spice"
+      - "${SPICE_DATA_DIR}:/data/spice"
 
   gitlfs:
     image: jlaura/gogitlfs
     ports:
-      - "9999:9999"
+      - "8086:9999"
     volumes:
-      - "/data/big/lfs:/data"
+      - "${LFS_DATA_DIR}:/data"
+
