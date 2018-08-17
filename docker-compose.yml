@@ -1,7 +1,7 @@
 version: "3"                                                                    
 services:   
   pfeffernusse:                                                                 
-    image: jlaura/pfeffernusse                                                
+    image: usgsastro/pfeffernusse                                                
     ports:                                                                    
       - "38002:5000"                                                         
     volumes:                                                                  
