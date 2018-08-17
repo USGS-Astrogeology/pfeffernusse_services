@@ -3,7 +3,7 @@ services:
   pfeffernusse:                                                                 
     image: usgsastro/pfeffernusse                                                
     ports:                                                                    
-      - "8081:5000"                                                         
+      - "8081:8080"                                                         
     volumes:                                                                  
       - "${SPICE_DATA_DIR}:/data/spice"
 
